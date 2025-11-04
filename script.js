@@ -1,6 +1,13 @@
 function zagruzka(){
     const nik = prompt("ведіть нік","");
-    document.getElementById("nik").value=nik;
+    if (nik==0){
+        const povtor = promt("Ви не вели нік","")
+        document.getElementById("nik").value=povtor;
+    }
+    else{
+        document.getElementById("nik").value=nik;
+    }
+    
 }
 function generate(){
     const MAX_WINS = 3;
@@ -25,4 +32,5 @@ function generate(){
         alert('Bot WIN');
     }
 }
+
 
