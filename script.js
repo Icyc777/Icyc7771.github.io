@@ -1,8 +1,9 @@
 function zagruzka(){
     const nik = prompt("ведіть нік","");
-    if (nik==0){
-        const povtor = promt("Ви не вели нік","")
-        document.getElementById("nik").value=povtor;
+    document.getElementById("nik").value=nik;
+    if (document.getElementById("nik").value==0){
+        alert("Ви не вели нік")
+        return
     }
     else{
         document.getElementById("nik").value=nik;
@@ -32,5 +33,6 @@ function generate(){
         alert('Bot WIN');
     }
 }
+
 
 
