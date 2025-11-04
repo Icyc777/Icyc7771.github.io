@@ -13,8 +13,8 @@ body {
     text-align: center;
     color: red;
     border-radius: 20px;
-    width: 100px;
-    height: 100px;
+    width: avto;
+    height: avto;
 }
 input{
     border: 0cm;
@@ -34,3 +34,4 @@ input{
     cursor: pointer;
 
 }
+
