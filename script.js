@@ -1,15 +1,13 @@
 function zagruzka(){
     const nik = prompt("ведіть нік","");
     document.getElementById("nik").value=nik;
-    if (document.getElementById("nik").value==0){
-        alert("Ви не вели нік")
-        return
-    }
-    else{
+    if (nik==""){
+        alert("Ви не вели нік");
+        const nik = "You";
         document.getElementById("nik").value=nik;
     }
-    
 }
+
 function generate(){
     const MAX_WINS = 3;
     let igrok_wins = document.getElementById("tvoi_vin").value;
@@ -27,12 +25,17 @@ function generate(){
         document.getElementById("bot_vin").value= bot_wins;
     }
     if(igrok_wins>=MAX_WINS){
-        alert('You WIN');  
+        const nik =document.getElementById("nik").value
+        alert(nik +' WIN');  
     }
     if(bot_wins>=MAX_WINS){
         alert('Bot WIN');
     }
 }
+
+
+
+
 
 
 
